@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>temperature</title>
+
+  <script type="text/javascript">
+    var Celsius;
+	var Fahrenheit;
+	
+	var floatC;
+	var floatF;
+	
+	Celsius = prompt("Please enter the Celsius:");
+	
+	floatC = parseFloat(Celsius);
+	floatF = parseFloat(Fahrenheit);
+	
+	function transCtoF(c) {
+	  return(c*9/5+32);
+	}
+	
+	floatF = transCtoF(floatC);
+	
+	document.writeln("<h1>Your Celsius is: " + Celsius + "</h1>");
+	document.writeln("<h1>,and the Fahrenheit is: " + floatF + ".</h1>");
+  </script>
+</head>
+<body>
+</body>
+</html>
